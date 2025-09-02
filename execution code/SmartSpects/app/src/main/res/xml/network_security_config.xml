@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext traffic for 192.168.225.241 -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.172.241</domain>
+    </domain-config>
+
+    <!-- Optionally, allow cleartext traffic for the entire 192.168.x.x network -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168</domain>
+    </domain-config>
+</network-security-config>
+
